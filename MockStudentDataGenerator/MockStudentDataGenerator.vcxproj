@@ -139,13 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Address.h" />
+    <ClInclude Include="DOB.h" />
+    <ClInclude Include="Email.h" />
     <ClInclude Include="FullName.h" />
     <ClInclude Include="MockStudents.h" />
+    <ClInclude Include="PhoneNumber.h" />
     <ClInclude Include="StudentInformation.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Address.cpp" />
+    <ClCompile Include="DOB.cpp" />
+    <ClCompile Include="Email.cpp" />
     <ClCompile Include="FullName.cpp" />
     <ClCompile Include="MockStudents.cpp" />
+    <ClCompile Include="PhoneNumber.cpp" />
     <ClCompile Include="StudentInformation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
