@@ -11,6 +11,7 @@ private:
 	string _middleNum;
 	string _lastNum;
 public:
+	PhoneNumber();
 	PhoneNumber(string, string, string);
 	string FirstNum() { return _firstNum; }
 	string MiddleNum() { return _middleNum; }

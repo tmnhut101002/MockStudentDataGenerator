@@ -9,6 +9,7 @@ private:
 	int _month;
 	int _year;
 public:
+	DOB();
 	DOB(int, int, int);
 	int Day() { return _day; }
 	int Month() { return _month; }

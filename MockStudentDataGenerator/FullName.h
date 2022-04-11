@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <fstream>
 
 using namespace std;
 
@@ -12,8 +14,8 @@ private:
 	string _middleName;
 	string _lastName;
 public:
+	FullName();
 	FullName(string, string, string);
-	~FullName();
 public:
 	string firstName() { return _firstName; }
 	string middleName() { return _middleName; }
@@ -21,5 +23,7 @@ public:
 	void setFirstName(string value) { _firstName = value; }
 	void setMiddleName(string value) { _middleName = value; }
 	void setLastName(string value) { _lastName = value; }
+
+	vector<string> readName(const char*);
 };
 

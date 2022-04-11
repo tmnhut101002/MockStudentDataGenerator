@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
-
+#include <vector>
+#include <fstream>
+#include <ctime>
 using namespace std;
 class Address
 {
@@ -11,6 +13,7 @@ private:
 	string _ward;
 	string _district;
 public: 
+	Address();
 	Address(int, string, string, string);
 	int Number() { return _number; }
 	string Street() { return _street; }
@@ -20,5 +23,10 @@ public:
 	void setStreet(string value) { _street = value; }
 	void setWard(string value) { _ward = value; }
 	void setDistrict(string value) { _district = value; }
+
+	vector<string> readAddress(const char*);
+	string randAddress();
 };
+
+
 

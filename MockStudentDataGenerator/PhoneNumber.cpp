@@ -1,4 +1,10 @@
 #include "PhoneNumber.h"
+PhoneNumber::PhoneNumber()
+{
+	_firstNum = "";
+	_middleNum = "";
+	_lastNum = "";
+}
 PhoneNumber::PhoneNumber(string first, string mid, string last)
 {
 	_firstNum = first;
