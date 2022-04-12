@@ -4,6 +4,7 @@
 #include <vector>
 #include <fstream>
 #include <ctime>
+#include <sstream>
 using namespace std;
 class Address
 {
@@ -28,7 +29,9 @@ public:
 
 	vector<string> readAddress(const char*);
 	Address randAddress();
+	string toString();
 };
+
 
 
 

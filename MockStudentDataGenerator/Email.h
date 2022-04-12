@@ -4,6 +4,8 @@
 #include <vector>
 #include <fstream>
 #include <ctime>
+#include <sstream>
+#include "FullName.h"
 
 using namespace std;
 
@@ -21,7 +23,10 @@ public:
 	void setDomain(string value) { _domain = value; }
 
 	vector<string> readEmail(const char*);
-	Email randEmail();
+	Email randEmail(FullName a);
 	void output();
+	string mail(FullName);
+	string toString();
+
 };
 

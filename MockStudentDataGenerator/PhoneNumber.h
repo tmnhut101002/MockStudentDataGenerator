@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include <sstream>
 
 using namespace std;
 
@@ -23,5 +24,6 @@ public:
 
 	PhoneNumber randPhoneNum();
 	void output();
+	string toString();
 };
 

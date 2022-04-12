@@ -48,3 +48,11 @@ void Address::output()
 {
 	cout << this->_number << ", " << this->_street << ", " << this->_ward << " Ward, " << this->_district << " District, TP HCM";
 }
+string Address::toString()
+{
+	stringstream out;
+	out << this->_number << ", " << this->_street << ", " << this->_ward << " Ward, " << this->_district << " District, TP HCM";
+	string result = out.str();
+	return result;
+
+}

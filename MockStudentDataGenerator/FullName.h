@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <ctime>
+#include <sstream>
 
 using namespace std;
 
@@ -28,5 +29,6 @@ public:
 	vector<string> readName(const char*);
 	FullName randName();
 	void output();
+	string toString();
 };
 

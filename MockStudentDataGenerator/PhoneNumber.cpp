@@ -27,5 +27,14 @@ PhoneNumber PhoneNumber::randPhoneNum()
 
 void PhoneNumber::output()
 {
-	cout << this->_firstNum << " " << this->_middleNum << " " << this->_lastNum;
+	cout << "0" << this->_firstNum << " " << this->_middleNum << " " << this->_lastNum;
+}
+
+string PhoneNumber::toString()
+{
+	stringstream out;
+	out << "0" << this->_firstNum << " " << this->_middleNum << " " << this->_lastNum;
+	string result = out.str();
+	return result;
+
 }

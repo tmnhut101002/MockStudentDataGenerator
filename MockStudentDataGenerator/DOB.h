@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <ctime>
-
+#include <sstream>
 using namespace std;
 class DOB
 {
@@ -22,5 +22,6 @@ public:
 
 	DOB randDOB();
 	void output();
+	string toString();
 };
 

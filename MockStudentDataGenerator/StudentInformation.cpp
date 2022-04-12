@@ -43,22 +43,43 @@ StudentInformation StudentInformation::randStudent()
 	result._fullname = this->_fullname.randName();
 	result._gpa = rand() / float((RAND_MAX)) * 10.0;
 	result._telephone = this->_telephone.randPhoneNum();
-	result._email = this->_email.randEmail();
+	result._email = this->_email.randEmail(result._fullname);
 	result._dob = this->_dob.randDOB();
 	result._address = this->_address.randAddress();
 	return result;
 }
-
-int main()
+void StudentInformation::writeFile(ofstream& ofs)
 {
-	StudentInformation a;
-	srand(time(NULL));
-	for (int i = 0; i < 5; i++)
-	{
-		StudentInformation new_st;
-		new_st = a.randStudent();
-		new_st.output();
-		cout << endl << "=======================================" << endl;
-	}
-	return 0;
+	ofs << "Student: " << this->_ID << " - ";
+	ofs << this->_fullname.toString();
+	ofs << endl << "GPA: " << _gpa;
+	ofs << endl << "Telephone: ";
+	ofs << this->_telephone.toString();
+	ofs << endl << "Email: ";
+	ofs << this->_email.toString();
+	ofs << endl << "DOB: ";
+	ofs << this->_dob.toString();
+	ofs << endl << "Address: ";
+	ofs << this->_address.toString();
+	ofs << endl;
+
 }
+
+//int main()
+//{
+//	StudentInformation a;
+//	srand(time(NULL));
+//	int res = rand() % (10 - 5 + 1) + 5;
+//	cout << res << endl;
+//	ofstream ofs;
+//	ofs.open("students.txt", ios::cur);
+//	for (int i = 0; i < res; i++)
+//	{
+//		StudentInformation new_st;
+//		new_st = a.randStudent();
+//		new_st.writeFile(ofs);
+//		new_st.output();
+//		cout << endl << "=======================================" << endl;
+//	}
+//	return 0;
+//}

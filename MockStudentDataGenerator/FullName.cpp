@@ -45,3 +45,12 @@ void FullName::output()
 {
 	cout << this->_firstName << " " << this->_middleName << " " << this->_lastName;
 }
+
+string FullName::toString()
+{
+	stringstream out;
+	out << this->_firstName << " " << this->_middleName << " " << this->_lastName;
+	string result = out.str();
+	return result;
+
+}

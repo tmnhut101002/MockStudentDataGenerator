@@ -44,3 +44,10 @@ void DOB::output()
 {
 	cout << this->_day << "/" << this->_month << "/" << this->_year;
 }
+string DOB::toString()
+{
+	stringstream out;
+	out << this->_day << "/" << this->_month << "/" << this->_year;
+	string result = out.str();
+	return result;
+}
