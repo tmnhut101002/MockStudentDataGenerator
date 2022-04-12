@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -25,5 +26,7 @@ public:
 	void setLastName(string value) { _lastName = value; }
 
 	vector<string> readName(const char*);
+	FullName randName();
+	void output();
 };
 

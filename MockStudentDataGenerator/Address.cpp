@@ -26,18 +26,25 @@ vector<string> Address::readAddress(const char* file_name)
 	}
 	return vt_add;
 }
-string Address::randAddress()
+Address Address::randAddress()
 {
-	string result = "";
+	Address result;
 	vector<string> vt_street = this->readAddress("tenduong.txt");
 	vector<string> vt_ward = this->readAddress("phuong.txt");
 	vector<string> vt_district = this->readAddress("quan.txt");
-	srand(time(NULL));
 	int num = 1 + rand() % (100);
 	string street = vt_street[rand() % (vt_street.size())];
 	string ward = vt_ward[rand() % (vt_ward.size())];
 	string district = vt_district[rand() % (vt_district.size())];
 
-	result = to_string(num) + ", " + street + ", " + ward + " Ward, " + district + " District, TP HCM";
+	result._number = num;
+	result._street = street;
+	result._ward = ward;
+	result._district = district;
+	//result = to_string(num) + ", " + street + ", " + ward + " Ward, " + district + " District, TP HCM";
 	return result;
+}
+void Address::output()
+{
+	cout << this->_number << ", " << this->_street << ", " << this->_ward << " Ward, " << this->_district << " District, TP HCM";
 }

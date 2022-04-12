@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <ctime>
 #include "FullName.h"
 #include "PhoneNumber.h"
 #include "Email.h"
@@ -22,6 +23,9 @@ private:
 public:
 	StudentInformation();
 	StudentInformation(int, FullName, float, PhoneNumber, Email, DOB, Address);
+	void output();
+
+	StudentInformation randStudent();
 
 };
 

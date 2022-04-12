@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -20,5 +21,7 @@ public:
 	void setDomain(string value) { _domain = value; }
 
 	vector<string> readEmail(const char*);
+	Email randEmail();
+	void output();
 };
 

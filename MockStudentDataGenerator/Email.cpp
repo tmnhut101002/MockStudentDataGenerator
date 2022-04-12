@@ -23,3 +23,17 @@ vector<string> Email::readEmail(const char* file_name)
 	}
 	return vt_domain;
 }
+Email Email::randEmail()
+{
+	Email result;
+	vector<string> vt_domain = readEmail("domain.txt");
+	string domain = vt_domain[rand() % (vt_domain.size())];
+	result._domain = domain;
+	result._localPart = "xxxxxxxxxx";
+	return result;
+}
+
+void Email::output()
+{
+	cout << this->_localPart << "@" << this->_domain;
+}

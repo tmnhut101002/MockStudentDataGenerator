@@ -1,23 +1,27 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <ctime>
 
 using namespace std;
 
 class PhoneNumber
 {
 private:
-	string _firstNum;
-	string _middleNum;
-	string _lastNum;
+	int _firstNum;
+	int _middleNum;
+	int _lastNum;
 public:
 	PhoneNumber();
-	PhoneNumber(string, string, string);
-	string FirstNum() { return _firstNum; }
-	string MiddleNum() { return _middleNum; }
-	string LastNum() { return _lastNum; }
-	void setFirstNum(string value) { _firstNum = value; }
-	void setMiddletNum(string value) { _middleNum = value; }
-	void setLastNum(string value) { _lastNum = value; }
+	PhoneNumber(int, int, int);
+	int FirstNum() { return _firstNum; }
+	int MiddleNum() { return _middleNum; }
+	int LastNum() { return _lastNum; }
+	void setFirstNum(int value) { _firstNum = value; }
+	void setMiddletNum(int value) { _middleNum = value; }
+	void setLastNum(int value) { _lastNum = value; }
+
+	PhoneNumber randPhoneNum();
+	void output();
 };
 

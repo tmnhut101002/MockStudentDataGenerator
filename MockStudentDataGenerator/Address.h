@@ -24,9 +24,12 @@ public:
 	void setWard(string value) { _ward = value; }
 	void setDistrict(string value) { _district = value; }
 
+	void output();
+
 	vector<string> readAddress(const char*);
-	string randAddress();
+	Address randAddress();
 };
+
 
 
 

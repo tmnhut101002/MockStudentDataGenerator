@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <string>
+#include <ctime>
 
 using namespace std;
 class DOB
@@ -17,5 +19,8 @@ public:
 	void setDay(int value) { _day = value; }
 	void setMonth(int value) { _month = value; }
 	void setYear(int value) { _year = value; }
+
+	DOB randDOB();
+	void output();
 };
 
