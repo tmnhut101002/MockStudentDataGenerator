@@ -152,9 +152,13 @@
     <ClCompile Include="DOB.cpp" />
     <ClCompile Include="Email.cpp" />
     <ClCompile Include="FullName.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="MockStudents.cpp" />
     <ClCompile Include="PhoneNumber.cpp" />
     <ClCompile Include="StudentInformation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

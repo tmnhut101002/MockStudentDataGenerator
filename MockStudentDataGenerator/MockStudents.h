@@ -1,8 +1,4 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <ctime>
-#include <vector>
 #include "StudentInformation.h"
 class MockStudents
 {

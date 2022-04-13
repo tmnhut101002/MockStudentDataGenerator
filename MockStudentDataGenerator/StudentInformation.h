@@ -24,8 +24,10 @@ public:
 	StudentInformation();
 	StudentInformation(int, FullName, float, PhoneNumber, Email, DOB, Address);
 	void output();
-
+	void output1();
 	StudentInformation randStudent();
 	void writeFile(ofstream&);
+	float gpaStudent();
+
 };
 

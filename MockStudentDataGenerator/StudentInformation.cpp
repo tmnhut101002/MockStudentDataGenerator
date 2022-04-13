@@ -35,6 +35,15 @@ void StudentInformation::output()
 	this->_address.output();
 }
 
+void StudentInformation::output1()
+{
+	cout << this->_ID << " - ";
+	this->_fullname.output();
+	cout << " , ";
+	cout << "GPA: " << _gpa;
+}
+
+
 StudentInformation StudentInformation::randStudent()
 {
 	StudentInformation result;
@@ -64,22 +73,8 @@ void StudentInformation::writeFile(ofstream& ofs)
 	ofs << endl;
 
 }
-
-//int main()
-//{
-//	StudentInformation a;
-//	srand(time(NULL));
-//	int res = rand() % (10 - 5 + 1) + 5;
-//	cout << res << endl;
-//	ofstream ofs;
-//	ofs.open("students.txt", ios::cur);
-//	for (int i = 0; i < res; i++)
-//	{
-//		StudentInformation new_st;
-//		new_st = a.randStudent();
-//		new_st.writeFile(ofs);
-//		new_st.output();
-//		cout << endl << "=======================================" << endl;
-//	}
-//	return 0;
-//}
+float StudentInformation::gpaStudent()
+{
+	float result = this->_gpa;
+	return result;
+}

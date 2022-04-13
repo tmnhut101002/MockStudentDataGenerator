@@ -1,15 +1,48 @@
-Student: 2127831 - Tran Huu Minh
-    GPA=7.30, Telephone=0909-888-773
-    Email=thminh@student.hcmus.edu.vn
-    DOB=17/12/2003
-    Address=8 Nguyen Dinh Chieu, Ward 5, District 3, Ho Chi Minh city
-Student: 2127832 - Nguyen Dieu Linh
-    GPA=9.22, Telephone=0912-351-718
-    Email=thminh@student.hcmus.edu.vn
-    DOB=23/09/2003
-    Address=22 Ngo Thoi Nhiem, Ward 2, District 1, Ho Chi Minh city 
-Student: 2127833 - Ngo Thoi Chanh
-    GPA=8.12, Telephone=0977-161-237
-    Email=ntchanh@student.hcmus.edu.vn
-    DOB=12/06/2003
-    Address=8 Binh Long, Binh Hung Hoa Ward, Bin Tan District, Ho Chi Minh city
+Student: 1004103 - Lac Quoc Gam
+GPA: 2.69631
+Telephone: 0910 592 591
+Email: LQGam@hinduhome.com
+DOB: 29/7/2001
+Address: 95, Nguyen Du, 06 Ward, Hoc Mon District, TP HCM
+Student: 1000305 - Than Hai Quyen
+GPA: 7.36076
+Telephone: 0930 581 260
+Email: THQuyen@hingis.org
+DOB: 6/2/1995
+Address: 63, Luong Dinh Cua, Ben Thanh Ward, Cu Chi District, TP HCM
+Student: 1028543 - Diep Phuong Thai
+GPA: 1.86468
+Telephone: 0926 291 652
+Email: DPThai@imgof.com
+DOB: 22/9/1954
+Address: 37, Cach Mang Thanh 8, Thu Thiem Ward, Tan Binh District, TP HCM
+Student: 1006428 - Vo Quoc Bao
+GPA: 8.47224
+Telephone: 0964 272 882
+Email: VQBao@hinduhome.com
+DOB: 1/1/1971
+Address: 96, Phan Van Tri, Phuoc Binh Ward, Phu Nhuan District, TP HCM
+Student: 1024811 - Chuc Ha Kieu
+GPA: 0.792261
+Telephone: 0947 506 477
+Email: CHKieu@absolutevitality.com
+DOB: 21/6/1980
+Address: 5, Xo Viet Nghe Tinh, Binh Tho Ward, 8 District, TP HCM
+Student: 1001590 - Van Hai Chuc
+GPA: 5.98682
+Telephone: 0978 153 668
+Email: VHChuc@outlook.com
+DOB: 17/10/1964
+Address: 40, Nguyen Du, Tan Dinh Ward, 5 District, TP HCM
+Student: 1028069 - Do Huy Linh
+GPA: 8.94101
+Telephone: 0913 317 154
+Email: DHLinh@hilarious.com
+DOB: 6/4/1927
+Address: 61, Ly Nam De, Thu Thiem Ward, Binh Chanh District, TP HCM
+Student: 1028527 - Van Hai Hoa
+GPA: 7.47948
+Telephone: 0984 329 732
+Email: VHHoa@hingis.org
+DOB: 16/9/1940
+Address: 55, Luong Dinh Cua, Linh Trung Ward, Go Vap District, TP HCM
