@@ -23,49 +23,18 @@ vector<string> Email::readEmail(const char* file_name)
 	}
 	return vt_domain;
 }
-void split(string str, string delimiter, string token[]) {
-	size_t pos = 0;
-	int i = 0;
-	while ((pos = str.find(delimiter)) != string::npos) {
-		token[i] = str.substr(0, pos);
-		str.erase(0, pos + delimiter.length());
-		i++;
-	}
-}
 
 string Email::mail(FullName a)
 {
-	/*
-	FullName name = a.randName();
-	string a1 = name.firstName();
-	string a2 = name.middleName();
-	string a3 = name.lastName();
-	char a4 = a1.front();
-	char a5 = a2.front();
-
-	stringstream out;
-	out << a4 << a5 << a3;
-	string result = out.str();
-	return result;
-	*/
-
-	//stringstream out;
 	string result;
 
-
-	result += a.firstName()[0];
-	result += a.middleName()[0];
-	result += a.lastName();
-	/*
-	string a1;
-	string token[3];
-	split(name, " ", token);
-	for (int i = 0; i < 2; i++)
+	result += tolower(a.firstName()[0]);
+	result += tolower(a.middleName()[0]);
+	result += tolower(a.lastName()[0]);
+	for (int i = 1; i < a.lastName().size(); i++)
 	{
-		out<<token[i].front();
+		result += a.lastName()[i];
 	}
-	string result = out.str();
-	*/
 
 	return result;
 

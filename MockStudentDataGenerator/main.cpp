@@ -15,7 +15,18 @@ int main()
 	}
 
 	float result1 = sum * 1.0 / vt_st.size();
+	int count = 0;
+	for (int i = 0; i < vt_st.size(); i++)
+	{
+		if (vt_st[i].gpaStudent() > result1)
+		{
+			count++;
+		}
+	}
+
+	cout << "There are " << res << " students who get random " << endl;
 	cout << "Average GPA :  " << result1 << endl;
+	cout << "A number of students with a GPA higher than " << result1 << " is " << count << endl << endl;
 
 	for (int i = 0; i < vt_st.size(); i++)
 	{
@@ -25,6 +36,8 @@ int main()
 			cout << endl;
 		}
 	}
+
+	system("pause");
 
 	return 0;
 }
